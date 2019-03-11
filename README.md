@@ -37,7 +37,7 @@ host    all             all             127.0.0.1/32            md5
 ```
 3. [PgAdmin] (we used PgAdmin 4) but feel free to use any DB tool for PostgreSQL. 
 
-4. [Maven 3](https://maven.apache.org/)
+4. [Maven 3](https://maven.apache.org/). Assert Maven is correctly installed. In a Terminal enter with the command: `mvn --version`. This should return the version of Maven. 
 
 
 ## Downloading files:
@@ -76,7 +76,7 @@ Obs: restoring this dump would require at least 10 Gb of free space. If your ope
 
 4. Assert the database is sound. Execute the following SQL command: `select id, title,body,processedtitle,processedbody,code, processedcode from postsmin po limit 10`. The return should list the main fields for 10 posts. 
 
-5. Assert Maven is correctly installed. In a Terminal enter with the command: `mvn --version`. This should return the version of Maven. 
+
 
 
 ## Setting Parameters
