@@ -108,10 +108,6 @@ If you want to reproduce other baselines except CROKAGE, please refer to our pap
 ## Running the jar 
 Open a terminal, go to the folder where the jar file and main.properties are located and run the following command: `java -Xms1024M -Xmx32g -jar crokage.jar --spring.config.location=./main.properties` . This command use the file `main.properties` to overwrite the default parameters which must be set as described above.
 
-## Running the app inside Eclipse
-
-Import the project into Eclipse. Right click on BotInitializer class -> Run As -> Run configurations. On Arguments tab, set VM arguments: `-Xms512m -Xmx32000m`. 
-
 
 ### Results
 
