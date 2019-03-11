@@ -88,6 +88,7 @@ Edit `main.properties` and set the **required** following parameters:
 `TMP_DIR`      = the folder location of the models. This folder is the tmp folder from previous step (ex /home/user/crokage-replication-package/tmp).
 
 `spring.datasource.username` = your db user
+
 `spring.datasource.password=YOUR_DB_PASSWORD` = your db password
 
 `action` = you have 2 main options: 
