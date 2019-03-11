@@ -45,7 +45,7 @@ Download all files (https://drive.google.com/drive/folders/1lf0moUz8iUK4vDzrbu-0
 
 Check your instalation. Make sure your crokage folder (ex /home/user/crokage-replication-package) contains this structure:
 
-.
+`.
 ..
 ./data 
 ./tmp (4 files)   
@@ -55,7 +55,7 @@ Check your instalation. Make sure your crokage folder (ex /home/user/crokage-rep
    ./soUpvotedPostsWithCodeAPIsMap.txt
 crokage.jar
 main.properties
-
+`
 
 ## Configuring the dataset
 1. The dump is the file dump2018crokagereplicationpackage.backup (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use. We only consider Java posts. **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
