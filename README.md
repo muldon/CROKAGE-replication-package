@@ -91,17 +91,9 @@ Edit `main.properties` and set the **required** following parameters:
 
 `spring.datasource.password=` = your db password
 
-`action` = you have 2 main options: 
+`action` = you have 2 main options. `action=runApproach`: run the retrieval mechanism and output metrics for our ground truth. CROKAGE will show metrics for the chosen data set (below). `action=extractAnswers`: build the summaries containing the solutions. 
 
-  `action=runApproach` -> run the retrieval mechanism and output metrics for our ground truth. CROKAGE will show metrics for the chosen data set (below). 
-
-  `action=extractAnswers` -> build the summaries containing the solutions. 
-
-`dataSet` = You also have 2 main options:
- 
-  `dataSet=selectedqueries-test48` = test (48 queries).
- 
-  `dataSet=selectedqueries-training49`= training (49 queries). 
+`dataSet` = You also have 2 main options. `dataSet=selectedqueries-test48`: test (48 queries). `dataSet=selectedqueries-training49`: training (49 queries). 
 
 
 The other parameters are **optional**:
