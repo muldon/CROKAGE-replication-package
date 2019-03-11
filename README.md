@@ -81,9 +81,7 @@ Obs: restoring this dump would require at least 10 Gb of free space. If your ope
 
 ## Setting Parameters
 
-Check if `main.properties` is in the same folder as the jar. Edit the file to set parameters as below:
-
-Edit the **required** following parameters: 
+Edit `main.properties` and set the **required** following parameters: 
 
 `CROKAGE_HOME` = the root folder of the project (ex /home/user/CROKAGE-replication-package) where you must place the jar and `main.properties`.
 
