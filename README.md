@@ -89,7 +89,7 @@ Edit `main.properties` and set the **required** following parameters:
 
 `spring.datasource.username` = your db user
 
-`spring.datasource.password=YOUR_DB_PASSWORD` = your db password
+`spring.datasource.password=` = your db password
 
 `action` = you have 2 main options: 
        `action=runApproach` -> run the retrieval mechanism and output metrics for our ground truth. CROKAGE will show metrics for the chosen data set (below).    
