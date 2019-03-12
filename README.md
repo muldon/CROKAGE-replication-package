@@ -41,7 +41,7 @@ host    all             all             127.0.0.1/32            md5
 
 
 ## Downloading files:
-Download all files (https://drive.google.com/drive/folders/1lf0moUz8iUK4vDzrbu-0oppvGSv00_E9) and place in a folder preferable in your home folder, ex /home/user/crokage-replication-package. 
+Download CROKAGE files [here](http://lascam.facom.ufu.br/companion/crokage/crokage-replication-package.zip) and place in a folder preferable in your home folder, ex /home/user/crokage-replication-package. 
 
 Check your instalation. Make sure your crokage folder (ex /home/user/crokage-replication-package) contains this structure:
 
@@ -58,7 +58,7 @@ main.properties
 ```
 
 ## Configuring the dataset
-1. The dump is the file dump2018crokagereplicationpackage.backup (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use. We only consider Java posts. **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
+1. Download the Dump of SO [here](http://lascam.facom.ufu.br/companion/crokage/dump2018crokagereplicationpackage.backup) (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use. We only consider Java posts. **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
 
 2. On your DB tool, create a new database named stackoverflow2018crokagereplicationpackage. This is a query example:
 ```
