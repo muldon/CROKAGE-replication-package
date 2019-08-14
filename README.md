@@ -117,6 +117,22 @@ select * from metricsresults
 ```
 
 
+
+## Invoking our REST interface
+You can use our REST interface to obtain solutions for your programming tasks. For this, Set your Content-Type to application/json and make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions passing the following parameters in JSON format:
+
+{
+"numberOfComposedAnswers":5,
+"reduceSentences":false,
+"queryText":"how to insert an element array in a given position"
+}
+
+Here follows an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
+
+![Example of REST call to CROKAGE](https://drive.google.com/open?id=1-UheFlOOSHq0uMqjPfJcSryFb0J5qycJ)
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
