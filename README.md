@@ -131,7 +131,7 @@ Here follows an example of making a REST call to our approach using the [RESTED]
 
 ![Example of REST call to CROKAGE](https://github.com/muldon/CROKAGE-replication-package/blob/master/RESTED-POST.png)
 
-
+The result is a JSON containing the answers with explanations. 
 
 ## License
 
