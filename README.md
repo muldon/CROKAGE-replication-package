@@ -129,7 +129,7 @@ You can use our REST interface to obtain solutions for your programming tasks. F
 
 Here follows an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
 
-![Example of REST call to CROKAGE](https://drive.google.com/open?id=1-UheFlOOSHq0uMqjPfJcSryFb0J5qycJ)
+![Example of REST call to CROKAGE](https://github.com/muldon/CROKAGE-replication-package/blob/master/RESTED-POST.png)
 
 
 
