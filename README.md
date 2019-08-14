@@ -119,7 +119,7 @@ select * from metricsresults
 
 
 ## Invoking our REST interface
-You can use our REST interface to obtain solutions for your programming tasks. For this, Set your Content-Type to application/json and make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions passing the following parameters in JSON format:
+You can use our REST interface to obtain solutions for your programming tasks. For this, Set your "Content-Type" to "application/json" and make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions passing the following parameters in JSON format:
 
 {<br/>
 "numberOfComposedAnswers":5,<br/>
