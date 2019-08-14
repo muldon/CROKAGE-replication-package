@@ -119,7 +119,7 @@ select * from metricsresults
 
 
 ## Invoking our REST interface
-You can use our REST interface to obtain solutions for your programming tasks. For this, Set your "Content-Type" to "application/json" and make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions passing the following parameters in JSON format:
+We provide a REST interface to enable other researchers to repeat, improve or refute our results. In order to obtain solutions for your programming tasks, you can call this interface from your applications. For this, Set your "Content-Type" to "application/json" and make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions passing the following parameters in JSON format:
 
 {<br/>
 "numberOfComposedAnswers":5,<br/>
@@ -127,7 +127,7 @@ You can use our REST interface to obtain solutions for your programming tasks. F
 "queryText":"how to insert an element array in a given position"<br/>
 }<br/>
 
-Here follows an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
+We demostrate an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
 
 ![Example of REST call to CROKAGE](https://github.com/muldon/CROKAGE-replication-package/blob/master/RESTED-POST.png)
 
