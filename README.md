@@ -4,7 +4,7 @@ Crowd Knowledge Answer Generator
 ## About
 
 ### Goal
-To provide a comprehensive solution for an API related task written in natural language (query). CROKAGE provides a list of appropriate solutions that contain not only relevant code examples but also their corresponding succinct explanations.
+To provide a comprehensive solution for an API related task written in natural language (query). CROKAGE provides a list of appropriate solutions that contain not only relevant code examples but also their corresponding succinct explanations. Feel free to try our (tool)[http://isel.ufu.br:9000/]. 
 
 ### Input / Output
 - Input: API related query in natural language.
