@@ -116,6 +116,10 @@ The results are displayed in the terminal/console but also stored in the databas
 select * from metricsresults
 ```
 
+## Tool
+We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to assist developers with their daily programming issues. The figure below shows the tool architecture. We follow a REST (Representational State Transfer) architecture. The tool is in beta version and only provide solutions for Java language, but we expect to release the full version soon.  
+
+![CROKAGE's architecture](https://github.com/muldon/CROKAGE-replication-package/blob/master/tool-architecture.png)
 
 
 ## Invoking our REST interface
