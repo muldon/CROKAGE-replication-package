@@ -123,7 +123,7 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 
 
 ## Invoking our REST interface
-We provide a REST interface to enable other researchers to repeat, improve or refute our results. In order to obtain solutions for your programming tasks, you can call this interface from your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
+We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. So if you are interested in obtaining the solutions for your programming tasks, you can call this interface from your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
 
 {<br/>
 "numberOfComposedAnswers":5,<br/>
