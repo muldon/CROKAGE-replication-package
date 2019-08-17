@@ -125,11 +125,13 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 ## Invoking our REST interface
 We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. So if you are interested in obtaining the solutions for your programming tasks, you can call this interface from your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
 
-{<br/>
-"numberOfComposedAnswers":5,<br/>
-"reduceSentences":false,<br/>
-"queryText":"how to insert an element array in a given position"<br/>
-}<br/>
+```
+{
+"numberOfComposedAnswers":5,
+"reduceSentences":false,
+"queryText":"how to insert an element array in a given position"
+}
+```
 
 We demostrate an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
 
