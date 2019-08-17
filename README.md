@@ -8,10 +8,10 @@ To provide a comprehensive solution for an API related task written in natural l
 
 ### Input / Output
 - Input: API related query in natural language.
-- Output: A summary about the API usage (Java APIs) with examples in form of code snippets and explanations.
+- Output: Code examples containing explanations 
 
 ### How
-CROKAGE receives as input an API related query in natural language and uses text retrieval models combined together and three state-of-art API recommender tools to retrieve the most related SO answers to that query, sorted by relevance. CROKAGE then uses natural language processing to extract the code and relevant sentences to compose a summary containing the solution for the query.  
+CROKAGE receives as input an API related query in natural language and uses text retrieval models combined together and three state-of-art API recommender tools to retrieve the most related Stack Overflow answers to that query, sorted by relevance. CROKAGE then uses natural language processing to extract the code and relevant sentences to compose a summary containing the solution for the query.  
 
 ### Features and comparison with other state-of-art works (AnswerBot and BIKER)
 - [AnswerBot](https://dl.acm.org/citation.cfm?id=3155650) is limited as it does not provide code.
@@ -21,6 +21,8 @@ CROKAGE receives as input an API related query in natural language and uses text
 ## Prerequisites
 
 Note: all the experiments were conducted over a server equipped with 32 GB RAM, 3.1 GHz on four cores and 64-bit Linux Mint Cinnamon operating system. We strongly recommend a similar or better hardware environment. The operating system however could be changed. 
+
+Note2: for now we only provide a replication package. The tool source code will be released soon, as soon. 
 
 Softwares:
 1. [Java 1.8] 
