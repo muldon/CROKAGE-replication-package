@@ -1,5 +1,5 @@
 # CROKAGE
-Crowd Knowledge Answer Generator. Feel free to try our [tool](http://isel.ufu.br:9000/). 
+Crowd Knowledge Answer Generator. Feel free to try our [tool](http://isel.ufu.br:9000/). For more details about the technique, please check our [paper](https://dl.acm.org/citation.cfm?id=3339130).
 
 ## About
 
