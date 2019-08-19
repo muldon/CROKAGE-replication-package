@@ -22,7 +22,6 @@ CROKAGE receives as input a query written in natural language and uses state-of-
 
 Note: all the experiments were conducted over a server equipped with 32 GB RAM, 3.1 GHz on four cores and 64-bit Linux Mint Cinnamon operating system. We strongly recommend a similar or better hardware environment. The operating system however could be changed. 
 
-Note 2: for now we only provide a replication package. The complete source code will be released soon. 
 
 Softwares:
 1. [Java 1.8] 
@@ -58,6 +57,7 @@ Check your instalation. Make sure your crokage folder (ex /home/user/crokage-rep
 crokage.jar
 main.properties
 ```
+Note: for now we only provide the replication package. The complete source code will be released soon. 
 
 ## Configuring the dataset
 1. Download the Dump of SO [here](http://lascam.facom.ufu.br/companion/crokage/dump2018crokagereplicationpackage.backup) (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use (we only consider Java posts in this initial version). **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
