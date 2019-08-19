@@ -4,14 +4,14 @@ Crowd Knowledge Answer Generator. Feel free to try our [tool](http://isel.ufu.br
 ## About
 
 ### Goal
-To provide a comprehensive solution for an API related task written in natural language (query). CROKAGE provides a list of appropriate solutions that contain not only relevant code examples but also their corresponding succinct explanations. 
+To provide comprehensive solutions for daily programming tasks containing code examples and succinct explanations (limited to Java in this initial vesion). 
 
 ### Input / Output
 - Input: API related query in natural language.
-- Output: Code examples containing explanations 
+- Output: Code examples containing explanations.  
 
 ### How
-CROKAGE receives as input an API related query in natural language and uses text retrieval models combined together and three state-of-art API recommender tools to retrieve the most related Stack Overflow answers to that query, sorted by relevance. CROKAGE then uses natural language processing to extract the code and relevant sentences to compose a summary containing the solution for the query.  
+CROKAGE receives as input a query written in natural language and uses state-of-art text retrieval models combined with three state-of-art API recommender tools to retrieve the most related Stack Overflow answers to that query, sorted by relevance. CROKAGE then uses natural language processing to extract the code and relevant sentences to compose a summary containing the solution for the query.  
 
 ### Features and comparison with other state-of-art works (AnswerBot and BIKER)
 - [AnswerBot](https://dl.acm.org/citation.cfm?id=3155650) is limited as it does not provide code.
@@ -60,7 +60,7 @@ main.properties
 ```
 
 ## Configuring the dataset
-1. Download the Dump of SO [here](http://lascam.facom.ufu.br/companion/crokage/dump2018crokagereplicationpackage.backup) (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use. We only consider Java posts. **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
+1. Download the Dump of SO [here](http://lascam.facom.ufu.br/companion/crokage/dump2018crokagereplicationpackage.backup) (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use (we only consider Java posts in this initial version). **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
 
 2. On your DB tool, create a new database named stackoverflow2018crokagereplicationpackage. This is a query example:
 ```
@@ -124,7 +124,7 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 ![CROKAGE's architecture](https://github.com/muldon/CROKAGE-replication-package/blob/master/tool-architecture.png)
 
 
-## Invoking our REST interface
+## Obtaining the solutions via REST interface
 We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. If you are interested in obtaining the solutions for your programming tasks, you can call this interface from within your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
 
 ```
