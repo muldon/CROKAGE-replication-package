@@ -125,7 +125,7 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 
 
 ## Invoking our REST interface
-We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. So if you are interested in obtaining the solutions for your programming tasks, you can call this interface from your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
+We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. If you are interested in obtaining the solutions for your programming tasks, you can call this interface from within your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
 
 ```
 {
@@ -135,7 +135,7 @@ We provide a REST interface to enable other researchers to use CROKAGE as a base
 }
 ```
 
-We demostrate an example of making a REST call to our approach using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
+This is an example of making a REST call to CROKAGE using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
 
 ![Example of REST call to CROKAGE](https://github.com/muldon/CROKAGE-replication-package/blob/master/RESTED-POST.png)
 
