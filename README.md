@@ -41,7 +41,9 @@ host    all             all             127.0.0.1/32            md5
 4. [Maven 3](https://maven.apache.org/). Assert Maven is correctly installed. In a Terminal enter with the command: `mvn --version`. This should return the version of Maven. 
 
 
-## Downloading files:
+## Running the tool mode 1 - replication package
+
+### Downloading files:
 Download CROKAGE files [here](http://lascam.facom.ufu.br/companion/crokage/crokage-replication-package.zip) and place in a folder preferable in your home folder, ex /home/user/crokage-replication-package. 
 
 Check your instalation. Make sure your crokage folder (ex /home/user/crokage-replication-package) contains this structure:
@@ -59,7 +61,7 @@ main.properties
 ```
 Note: for now we only provide the replication package. The complete source code will be released soon. 
 
-## Configuring the dataset
+### Configuring the dataset
 1. Download the Dump of SO [here](http://lascam.facom.ufu.br/companion/crokage/dump2018crokagereplicationpackage.backup) (Dump of June 2018). This is a preprocessed dump, downloaded from the [official web site](https://archive.org/details/stackexchange) containing the main tables we use (we only consider Java posts in this initial version). **Postsmin** table (representing **posts** table) has extra columns with the preprocessed data used by CROKAGE (**processedtitle, processedbody, code, processedcode**). 
 
 2. On your DB tool, create a new database named stackoverflow2018crokagereplicationpackage. This is a query example:
@@ -81,7 +83,7 @@ Obs: restoring this dump would require at least 10 Gb of free space. If your ope
 
 
 
-## Setting Parameters
+### Setting Parameters
 
 Edit `main.properties` and set the **required** following parameters: 
 
@@ -107,7 +109,7 @@ The other parameters are **optional**:
 If you want to reproduce other baselines except CROKAGE, please refer to our paper to more details about how to set the weights.
 
 
-## Running the jar 
+### Running the jar 
 Open a terminal, go to the folder where the jar file and main.properties are located and run the following command: `java -Xms1024M -Xmx32g -jar crokage.jar --spring.config.location=./main.properties` . This command use the file `main.properties` to overwrite the default parameters which must be set as described above.
 
 
@@ -118,13 +120,9 @@ The results are displayed in the terminal/console but also stored in the databas
 select * from metricsresults
 ```
 
-## Tool
-We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to assist developers with their daily programming issues. The figure below shows the tool architecture. We follow a REST (Representational State Transfer) architecture. The tool is in beta version and only provide solutions for Java language, but we expect to release the full version soon.  
-
-![CROKAGE's architecture](https://github.com/muldon/CROKAGE-replication-package/blob/master/tool-architecture.png)
 
 
-## Obtaining the solutions via REST interface
+## Running the tool mode 2 - Obtaining the solutions via REST interface
 We provide a REST interface to enable other researchers to use CROKAGE as a baseline or repeat, improve or refute our results. If you are interested in obtaining the solutions for your programming tasks, you can call this interface from within your applications. For this, make a POST request to http://isel.ufu.br:8080/crokage/query/getsolutions, set in the header the "Content-Type" to "application/json" and pass the following parameters in JSON format:
 
 ```
@@ -135,11 +133,31 @@ We provide a REST interface to enable other researchers to use CROKAGE as a base
 }
 ```
 
+### Example 1 
 This is an example of making a REST call to CROKAGE using the [RESTED](https://chrome.google.com/webstore/detail/rested/eelcnbccaccipfolokglfhhmapdchbfg) plugin for Chrome. 
 
 ![Example of REST call to CROKAGE](https://github.com/muldon/CROKAGE-replication-package/blob/master/RESTED-POST.png)
 
 The result is a JSON containing the answers with explanations. 
+
+### Example 2
+We provide a Java implementation for invoking the rest interface. For this, follow the following steps:
+
+1. Clone this project into your local machine: git clone https://github.com/muldon/CROKAGE-replication-package.git
+
+2. Import the maven project into your IDE (i.e., Eclipse).
+
+3. Right click on CrokageInitializer.java on Package Explorer-> Run As -> Java Application. 
+
+If you desire to change the parameters, access `application.properties` file under `src/main/resources/config/`. Once you run the application, the demo client will invoke the remove REST api and obtain the solutions for the queries in the list. 
+
+
+
+## Tool
+We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to assist developers with their daily programming issues. The figure below shows the tool architecture. We follow a REST (Representational State Transfer) architecture. The tool is in beta version and only provide solutions for Java language, but we expect to release the full version soon.  
+
+![CROKAGE's architecture](https://github.com/muldon/CROKAGE-replication-package/blob/master/tool-architecture.png)
+
 
 ## License
 
