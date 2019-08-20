@@ -77,8 +77,14 @@ public class DyCrokageApp{
 			
 			List<Post> posts = postRestTransfer.getPosts();
 			int pos=1;
+			logger.info("Solutions for: "+query);
 			for(Post answer: posts) {
-				logger.info("Answer: "+pos+" -id:"+answer.getId()+ " -body: "+answer.getBody());
+				//via link
+				logger.info("https://stackoverflow.com/questions/"+answer.getId());
+				
+				//or directly 
+				//logger.info("Answer: "+pos+" -id:"+answer.getId()+ " -body: "+answer.getBody());
+				
 				pos++;
 			}
 			
