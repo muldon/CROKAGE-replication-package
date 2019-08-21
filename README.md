@@ -161,7 +161,7 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE) file for details
 
 
 [Java 1.8]: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
