@@ -159,6 +159,26 @@ We implemented our approach in form of a [tool](http://isel.ufu.br:9000/) to ass
 ![CROKAGE's architecture](https://github.com/muldon/CROKAGE-replication-package/blob/master/tool-architecture.png)
 
 
+
+
+## Citation
+
+If you intend to use this work, please cite us:
+
+
+```
+@inproceedings{silva2019recommending,
+  title={Recommending comprehensive solutions for programming tasks by mining crowd knowledge},
+  author={Silva, Rodrigo FG and Roy, Chanchal K and Rahman, Mohammad Masudur and Schneider, Kevin A and Paixao, Klerisson and de Almeida Maia, Marcelo},
+  booktitle={Proceedings of the 27th International Conference on Program Comprehension},
+  pages={358--368},
+  year={2019},
+  organization={IEEE Press}
+}
+```
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details
